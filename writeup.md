@@ -57,9 +57,11 @@ There are two main steps to this process: use chessboard images to obtain image 
 The code is available in function cal_undistort in IPython notebook ./P2.ipynb. 
 
 - before calibration
+
 ![alt text][image0]
 
 - after calibration
+
 ![alt text][image1]
 
 ### Pipeline (single images)
@@ -67,9 +69,11 @@ The code is available in function cal_undistort in IPython notebook ./P2.ipynb.
 #### 1. Provide an example of a distortion-corrected image.
 
 - original photo
+
 ![alt text][image14]
 
 - distortion correction
+
 ![alt text][image2]
 
 #### 2. Describe how (and identify where in your code) you used color transforms, gradients or other methods to create a thresholded binary image.  Provide an example of a binary image result.
@@ -81,6 +85,7 @@ cv2.Sobel() is used for to calculate gradient and cv2.cvtColor(..., cv2.COLOR_RG
 The code is available in function binary_image in IPython notebook ./P2.ipynb.
 
 - binary image
+
 ![alt text][image3]
 
 #### 3. Describe how (and identify where in your code) you performed a perspective transform and provide an example of a transformed image.
@@ -104,6 +109,7 @@ dst = np.float32(
 The code is avilable in function perspective_transform in IPython notebook ./P2.ipynb.
 
 - perspective transform
+
 ![alt text][image4]
 
 #### 4. Describe how (and identify where in your code) you identified lane-line pixels and fit their positions with a polynomial?
@@ -113,6 +119,7 @@ I use the two highest peaks from histogram as a starting point for determining w
 The code is avilable in function find_lane_pixels in IPython notebook ./P2.ipynb.
 
 - Identify lane line
+
 ![alt text][image5]
 
 #### 5. Describe how (and identify where in your code) you calculated the radius of curvature of the lane and the position of the vehicle with respect to center.
@@ -126,40 +133,57 @@ The code to calucalte position of the vehicle with respect to center is availabl
 The code is available in function draw_figure in IPython notebook ./P2.ipynb.
 
 - final image
+
 ![alt text][image6]
 
 #### 7. All results for test images:
 
 - test1.jpg
+
 ![alt text][image14]
+
 ![alt text][image6]
 
 - test2.jpg
+
 ![alt text][image15]
+
 ![alt text][image7]
 
 - test3.jpg
+
 ![alt text][image16]
+
 ![alt text][image8]
 
 - test4.jpg
+
 ![alt text][image17]
+
 ![alt text][image9]
 
 - test5.jpg
+
 ![alt text][image18]
+
 ![alt text][image10]
 
 - test6.jpg
+
 ![alt text][image19]
+
 ![alt text][image11]
 
 - straight_lines1.jpg
+
 ![alt text][image20]
+
 ![alt text][image12]
 
 - straight_lines2.jpg
+
 ![alt text][image21]
+
 ![alt text][image13]
 
 ---
