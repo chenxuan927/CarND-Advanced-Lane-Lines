@@ -70,7 +70,7 @@ The code is available in function cal_undistort in IPython notebook ./P2.ipynb.
 
 - original photo
 
-![alt text][image14]
+![alt text][image20]
 
 - distortion correction
 
