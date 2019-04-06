@@ -78,9 +78,9 @@ The code is available in function cal_undistort in IPython notebook ./P2.ipynb.
 
 #### 2. Describe how (and identify where in your code) you used color transforms, gradients or other methods to create a thresholded binary image.  Provide an example of a binary image result.
 
-I used a combination of color and gradient thresholds to generate a binary image. 
+I used a combination of gradient and color thresholds to generate a binary image. 
 
-cv2.Sobel() is used for to calculate gradient and cv2.cvtColor(..., cv2.COLOR_RGB2HLS) is used for HLS color space conversion. 
+cv2.Sobel() is used for to calculate gradient, cv2.cvtColor(..., COLOR_RGB2Luv) is used for LUV color space conversion and cv2.cvtColor(..., COLOR_RGB2Lab) is used for LAB color conversion. 
 
 The code is available in function binary_image in IPython notebook ./P2.ipynb.
 
