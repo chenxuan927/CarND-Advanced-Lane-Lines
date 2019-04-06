@@ -134,7 +134,7 @@ The code is available in function draw_figure in IPython notebook ./P2.ipynb.
 
 - final image
 
-![alt text][image6]
+![alt text][image12]
 
 #### 7. All results for test images:
 
